@@ -66,5 +66,4 @@ const ConsumerQueryAdmin = () => {
     )
 }
 
-
 export default ConsumerQueryAdmin;
