@@ -12,10 +12,8 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Login {
-
+public class Login 
+{
 	private String emailId;
 	private String password;
-
-
 }
