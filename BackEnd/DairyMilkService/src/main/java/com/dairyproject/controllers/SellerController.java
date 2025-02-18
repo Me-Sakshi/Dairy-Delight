@@ -145,7 +145,5 @@ public class SellerController {
 	public String insertNewSellerQuery(@Valid @RequestBody ConsumerQueryMessage sellerQuery) {
 		return queryServ.insertNewSellerQuery(sellerQuery);
 	}
-	
-
 
 }
