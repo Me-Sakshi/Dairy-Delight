@@ -25,21 +25,3 @@ public interface ProductRepository extends JpaRepository<ProductDetails, Integer
     @Query("delete from ProductDetails p where p.PID = :pid")
     public int deleteProductDetailsByPID(@Param("pid") Integer pid);
 }
-
-//@Repository
-//public interface ProductRepository extends CrudRepository<ProductDetails, Integer> {
-//
-//	@Query("select p from ProductDetails p")
-//	public Set<ProductDetails> findAllProductDetails();
-//
-//	@Query("select p from ProductDetails p where p.name = ?1")
-//	public ProductDetails findProductDetailsByName(String name);
-//
-//	@Query("select p from ProductDetails p where p.PID = ?1")
-//	public ProductDetails findProductDetailByPid(Integer PID);
-//
-//	@Modifying
-//	@Query("delete from ProductDetails where PID = ?1")
-//	public int deleteProductDetailsByPID(Integer pid);
-//
-//}
