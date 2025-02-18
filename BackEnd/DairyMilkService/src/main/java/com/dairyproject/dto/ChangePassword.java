@@ -9,7 +9,8 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class ChangePassword {
+public class ChangePassword 
+{
 	private String emailId;
 	private String oldPassword;
 	private String newPassword;
