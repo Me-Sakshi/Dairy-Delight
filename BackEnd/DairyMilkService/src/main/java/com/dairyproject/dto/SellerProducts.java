@@ -12,7 +12,8 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class SellerProducts {
+public class SellerProducts 
+{
 	private String emailId;
 	private String password;
 
