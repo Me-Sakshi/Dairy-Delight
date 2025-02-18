@@ -19,17 +19,3 @@ public interface SellerQueryRepository extends JpaRepository<SellerQuery, Intege
     @Query("select q from SellerQuery q where q.sellerDetails.emailId like %:emailId%")
     public List<SellerQuery> findSellerQueriesBySellerEmailId(@Param("emailId") String emailId);
 }
-
-//@Repository
-//public interface SellerQueryRepository extends CrudRepository<SellerQuery, Integer> {
-//
-//	@Query("select q from SellerQuery q")
-//	public List<SellerQuery> findAllSellerQueries();
-//
-//	@Query("select q from SellerQuery q where q.dateTime like %?1%")
-//	public List<SellerQuery> findSellerQueriesByDateTime(String dateTime);
-//
-//	@Query("select q from SellerQuery q where q.sellerDetails.emailId like %?1%")
-//	public List<SellerQuery> findSellerQueriesBySellerEmailId(String emailId);
-//
-//}
