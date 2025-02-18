@@ -22,20 +22,3 @@ public interface PurchaseRecordRepository extends JpaRepository<PurchaseDetails,
     @Query("select p from PurchaseDetails p where p.purchaseId = :purchaseId")
     public PurchaseDetails findPurchaseDetailsByPurchaseId(@Param("purchaseId") Integer purchaseId);
 }
-
-//@Repository
-//public interface PurchaseRecordRepository extends CrudRepository<PurchaseDetails, Integer> {
-//
-//	@Query("select p from PurchaseDetails p")
-//	public List<PurchaseDetails> findAllPurchaseDetails();
-//
-//	@Query("select p from PurchaseDetails p where consumerDetails.emailId = ?1")
-//	public List<PurchaseDetails> findAllPurchaseDetailsByConsumerEmailId(String emailId);
-//
-//	@Query("select p from PurchaseDetails p where sellerDetails.emailId = ?1")
-//	public List<PurchaseDetails> findAllPurchaseDetailsBySellerEmailId(String emailId);
-//
-//	@Query("select p from PurchaseDetails p where p.purchaseId = ?1")
-//	public PurchaseDetails findPurchaseDetailsByPurchaseId(Integer purchaseId);
-//
-//}
