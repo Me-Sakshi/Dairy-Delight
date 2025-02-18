@@ -1,0 +1,107 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+.home{
+    width:100%;
+    height:100vh;
+    /* background-color: #363740; */
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider{
+    margin-top:1rem;
+    width:800px;
+    /* max-width: 500px; */
+}
+
+.slider img{
+    background-size:contain;
+}
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* background-color: rgb(245, 248, 255); */
+    font-family: "Arial","sans-serif";
+}
+
+.mainHeader{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-weight: 200;
+    color: #000;
+    margin:1rem 0;
+}
+
+.subHeader{
+    width:80vw;
+    min-width: 400px;
+    font-weight: 100;
+    font-size: large;
+    color: rgb(96, 93, 93);
+}
+
+.subItems{
+    max-width: 1200px;
+    margin:2rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-auto-flow: column; */
+    gap: 10px;
+    padding:1rem;
+    align-content:center ;
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px; */
+    /* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; */
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    border-radius: 1rem;
+}
+
+.midContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding:1rem 0;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+}
+.midContainer:hover{
+    cursor: pointer;
+    /* box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px; */
+    /* box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    border-radius: 1rem;
+}
+.containerImg{
+    /* max-width:100px; */
+    overflow: hidden;
+    /* background-size:; */
+    border-radius: 0.5rem;
+    max-height:200px;
+    max-width: 200px;
+}
+
+/* .containerImg img{
+    background:no-repeat center;
+    background-size:contain;
+} */
+
+
+
+.boxHeader{
+    /* font-family: 'georgia'; */
+    margin:1rem 0;
+    font-size: medium;
+    font-weight: 100;
+}
+
+.boxContent{
+    font-size:small;
+    margin:0 2rem;
+    color:rgb(72, 69, 69);
+    /* color:#fff; */
+}
