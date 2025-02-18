@@ -5,9 +5,8 @@ import lombok.Getter;
 
 @Builder
 @Getter
-public class ErrorDto {
-
+public class ErrorDto 
+{
     private String errorMsg;
     private String statusCOde;
-
 }
