@@ -11,7 +11,8 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class ConfirmPurchaseOrder {
+public class ConfirmPurchaseOrder 
+{
 
 	@Email
 	private String consumerEmailId;
@@ -21,7 +22,4 @@ public class ConfirmPurchaseOrder {
 	@NotNull
 	private int quantity;
 	private String paymentMode;
-
-
-
 }
