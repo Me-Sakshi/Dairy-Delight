@@ -36,7 +36,7 @@ import com.dairyproject.services.SellerServices;
 
 // elastic IP -> 10.21.11.12 -> EC2 machine -> terminate/restart
 @RestController
-@CrossOrigin // read about this
+@CrossOrigin
 @RequestMapping("/admin")
 public class AdminController {
 
@@ -70,18 +70,6 @@ public class AdminController {
 	@Autowired
 	private PurchaseServices purchaseServ;
 
-	//constructor based injection
-	// if class contains only one constructor then no need to use @Autowired on the constructor
-	// bean lifecycle
-	//   Bean factory loaded(Application Context(P) / Bean factory(C))
-	// 	 Post-process bean factory  definination -> Interface(BeanFactoryPostProcessor)
-	//   Instatiated bean (constructor called) -> constructor
-	//   setter (setter based)   -> setter based
-	//   @Postconstruct
-	//   use bean in the application
-	// 	 @PreDestroy
-
-
 	@GetMapping("/fetchconsumerbyemail")
 	public ConsumerDetails getConsumerDetailsByEmailId(@RequestParam String emailId) {
 		return conServ.getConsumerDetailsByEmailId(emailId);
@@ -97,37 +85,7 @@ public class AdminController {
 		return conServ.getConsumerDetailsByPhoneNumer(phoneNumber);
 	}
 
-	// instead use @DeleteMapping
-	/*
-			@GetMapping  -> used to retrive resource from the server
-			@PostMapping  (idepotenent ) -> it is used to create resource on the server/
-			@PutMapping   -> edit or create a resource on the server(whole resource
-			@PatchMapping()  -> edit particular property of resource on the server
-			@DeleteMapping  -> to delete resource from the server
-
-
-			// soft delete and hard delete
-			 // one field isDeleted
-
-
-			 Client input data
-				 @RequestParam
-				 @PathVariable
-				 @RequestBody
-
-			/products/{product_id}/edit
-
-			/products/1/ingredients/2/edit
-			/users/2/edit
-			//collections->
-
-			URL -> URI
-
-
-			Can @GetMapping contains @RequestBody
-
-
-	 */
+	
 	@GetMapping("/removeconsumeraccount")
 	public String deleteConsumerById(@RequestParam Integer consumerId) {
 		return conServ.deleteConsumerDetailsByConsumerId(consumerId);
