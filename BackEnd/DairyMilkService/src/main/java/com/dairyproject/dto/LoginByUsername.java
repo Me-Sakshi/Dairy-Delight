@@ -9,8 +9,8 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class LoginByUsername {
+public class LoginByUsername 
+{
 	private String username;
 	private String password;
-
 }
