@@ -9,7 +9,8 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class LoginByPhone {
+public class LoginByPhone 
+{
 	private String phoneNumber;
 	private String password;
 }
