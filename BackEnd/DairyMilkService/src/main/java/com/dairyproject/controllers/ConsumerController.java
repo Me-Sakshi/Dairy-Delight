@@ -125,5 +125,4 @@ public class ConsumerController {
 		return queryServ.insertNewConsumerQuery(consumerQuery);
 	}
 	
-	
 }
