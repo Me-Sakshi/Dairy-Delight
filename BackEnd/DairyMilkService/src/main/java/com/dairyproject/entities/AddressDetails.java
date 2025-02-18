@@ -23,8 +23,8 @@ import lombok.Setter;
 @NoArgsConstructor
 @Entity
 @Table
-public class AddressDetails {
-
+public class AddressDetails 
+{
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "aid")
