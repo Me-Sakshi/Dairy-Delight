@@ -9,9 +9,8 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class ConsumerQueryMessage {
-
+public class ConsumerQueryMessage 
+{
 	private String emailId;
 	private String message;
-
 }
